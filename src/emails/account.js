@@ -22,8 +22,7 @@ const  SendWelcomeMail =async (email ,name)=> {
       html: `<b> Welcomw to the App, ${name} . Let me Know how you Get along With the app.</b>`, // html body
     });
   
-    console.log("Message sent: %s", info.messageId);
-    // Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
+
   }
 
 
@@ -40,8 +39,7 @@ const info= await transporter.sendMail({
 
     
 })
-console.log("Account deleted : %s", info.messageId);
-// Message sent: <d786aa62-4e0a-070a-47ed-0b0666549519@ethereal.email>
+
 
 }
 
